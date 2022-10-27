@@ -18,3 +18,9 @@ sources:
 - https://github.com/dell/csi-powerstore
 maintainers:
 - name: DellEMC
+dependencies:
+- name: csm-application-mobility
+  version: 0.1.0
+  repository: https://dell.github.io/helm-charts
+  condition: csm-application-mobility.enabled
+

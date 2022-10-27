@@ -1,0 +1,6 @@
+dependencies:
+- name: csm-application-mobility
+  repository: https://dell.github.io/helm-charts
+  version: 0.1.0
+digest: sha256:760f1b33cc134df9d58ed3862fd0cccd718451bba8cb06114fb6a0f901050272
+generated: "2022-10-21T00:35:50.811733721-04:00"

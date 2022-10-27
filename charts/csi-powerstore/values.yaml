@@ -262,3 +262,7 @@ storageCapacity:
 images:
   # "driver" defines the container image, used for the driver container.
   driverRepository: dellemc
+  
+  # adding dependencies
+csm-application-mobility:
+  enabled: false
