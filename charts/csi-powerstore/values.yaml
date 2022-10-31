@@ -265,4 +265,8 @@ images:
   
   # adding dependencies
 csm-application-mobility:
-  enabled: false
+  enabled: true
+  
+karavi-observability:
+  enabled: true
+
