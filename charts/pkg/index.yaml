@@ -2,8 +2,37 @@ apiVersion: v1
 entries:
   csi-powerstore:
   - apiVersion: v2
+    appVersion: 2.5.0
+    created: "2022-11-08T09:58:59.917972317-05:00"
+    dependencies:
+    - condition: karavi-observability.enabled
+      name: karavi-observability
+      repository: https://dell.github.io/helm-charts
+      version: 1.3.1
+    - condition: csm-application-mobility.enabled
+      name: csm-application-mobility
+      repository: https://dell.github.io/helm-charts
+      version: 0.1.0
+    description: 'PowerStore CSI (Container Storage Interface) driver Kubernetes integration.
+      This chart includes everything required to provision via CSI as well as a PowerStore
+      StorageClass. '
+    digest: 138001cfa95f37e09f414f669ae5b2e9673aaada80f95f936f9ebfd404577ecc
+    home: https://github.com/dell/csi-powerstore
+    keywords:
+    - csi
+    - storage
+    kubeVersion: '>= 1.21.0 < 1.26.0'
+    maintainers:
+    - name: DellEMC
+    name: csi-powerstore
+    sources:
+    - https://github.com/dell/csi-powerstore
+    urls:
+    - csi-powerstore-2.5.0.tgz
+    version: 2.5.0
+  - apiVersion: v2
     appVersion: 2.4.0
-    created: "2022-10-20T01:02:22.960851994-04:00"
+    created: "2022-11-08T09:58:59.894441673-05:00"
     description: 'PowerStore CSI (Container Storage Interface) driver Kubernetes integration.
       This chart includes everything required to provision via CSI as well as a PowerStore
       StorageClass. '
@@ -21,4 +50,42 @@ entries:
     urls:
     - csi-powerstore-2.4.0.tgz
     version: 2.4.0
-generated: "2022-10-20T01:02:22.958967542-04:00"
+  csm-application-mobility:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2022-11-08T09:58:59.928396295-05:00"
+    dependencies:
+    - condition: cert-manager.enabled
+      name: cert-manager
+      repository: https://charts.jetstack.io
+      version: 1.8.2
+    - condition: velero.enabled
+      name: velero
+      repository: https://vmware-tanzu.github.io/helm-charts
+      version: 2.29.8
+    description: A Helm chart deploying Application Mobility
+    digest: 9af203a9d1df18598b7242c411d27505c4dbd6f7bf3854737bc16a44cd0e7534
+    name: csm-application-mobility
+    type: application
+    urls:
+    - csm-application-mobility-0.1.0.tgz
+    version: 0.1.0
+  karavi-observability:
+  - apiVersion: v2
+    appVersion: 1.3.1
+    created: "2022-11-08T09:58:59.944074575-05:00"
+    dependencies:
+    - name: cert-manager
+      repository: https://charts.jetstack.io
+      version: 1.6.1
+    description: CSM for Observability is part of the [Container Storage Modules](https://github.com/dell/csm)
+      open source suite of Kubernetes storage enablers for Dell EMC storage products.
+      CSM for Observability provides Kubernetes administrators with visibility into
+      metrics and topology data related to containerized storage.
+    digest: c873710a7f2ed332a7e7f5cb1a312dc0cfed812a7be76abfd4063f189a20f635
+    name: karavi-observability
+    type: application
+    urls:
+    - karavi-observability-1.3.1.tgz
+    version: 1.3.1
+generated: "2022-11-08T09:58:59.891943224-05:00"
