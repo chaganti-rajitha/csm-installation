@@ -21,11 +21,16 @@ maintainers:
 dependencies:
 - name: csm-application-mobility
   version: 0.1.0
-  repository: https://dell.github.io/helm-charts
+  repository: https://chaganti-rajitha.github.io/csm-installation/charts/pkg/
   condition: csm-application-mobility.enabled
 
 - name: karavi-observability
   version: 1.3.1
-  repository: https://dell.github.io/helm-charts
+  repository: https://chaganti-rajitha.github.io/csm-installation/charts/pkg/
   condition: karavi-observability.enabled
+  
+- name: csm-replication
+  version: 1.3.0
+  repository: https://chaganti-rajitha.github.io/csm-installation/charts/pkg/
+  condition: csm-replication.enabled
 

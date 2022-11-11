@@ -263,12 +263,20 @@ images:
   # "driver" defines the container image, used for the driver container.
   driverRepository: dellemc
   
-  # adding dependencies
+# adding dependencies
 csm-application-mobility:
-  enabled: false
+  enabled: true
   cert-manager:
     enabled: false
   
 karavi-observability:
   enabled: true
+  karaviMetricsPowerflex:
+    enabled: false
+  karaviMetricsPowerscale:
+    enabled: false
+    
+csm-replication:
+  enabled: false
+
 
