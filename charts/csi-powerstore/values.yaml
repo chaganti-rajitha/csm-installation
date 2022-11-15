@@ -270,7 +270,7 @@ csm-application-mobility:
     enabled: false
   
 karavi-observability:
-  enabled: true
+  enabled: false
   karaviMetricsPowerflex:
     enabled: false
   karaviMetricsPowerscale:
