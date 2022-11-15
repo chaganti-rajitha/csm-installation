@@ -211,7 +211,7 @@ kind: Deployment
 metadata:
   labels:
     control-plane: controller-manager
-  name: {{ .Release.Name }}-manager
+  name: dell-replication-controller-manager
   namespace: {{ .Release.Namespace }}
 spec:
   replicas: {{ .Values.replicas }}

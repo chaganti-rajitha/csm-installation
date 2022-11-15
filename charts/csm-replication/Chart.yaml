@@ -3,3 +3,5 @@ name: csm-replication
 type: application
 version: 1.3.0
 appVersion: "1.3.0"
+description:
+  A Helm chart deploying Replication

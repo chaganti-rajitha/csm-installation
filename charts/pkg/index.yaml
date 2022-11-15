@@ -3,7 +3,7 @@ entries:
   csi-powerstore:
   - apiVersion: v2
     appVersion: 2.5.0
-    created: "2022-11-15T00:25:51.238289599-05:00"
+    created: "2022-11-15T01:06:03.231974446-05:00"
     dependencies:
     - condition: karavi-observability.enabled
       name: karavi-observability
@@ -32,7 +32,7 @@ entries:
     version: 2.5.0
   - apiVersion: v2
     appVersion: 2.4.0
-    created: "2022-11-15T00:25:51.216510059-05:00"
+    created: "2022-11-15T01:06:03.19336663-05:00"
     description: 'PowerStore CSI (Container Storage Interface) driver Kubernetes integration.
       This chart includes everything required to provision via CSI as well as a PowerStore
       StorageClass. '
@@ -53,7 +53,7 @@ entries:
   csm-application-mobility:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2022-11-15T00:25:51.246594154-05:00"
+    created: "2022-11-15T01:06:03.247353327-05:00"
     dependencies:
     - condition: cert-manager.enabled
       name: cert-manager
@@ -73,8 +73,9 @@ entries:
   csm-replication:
   - apiVersion: v2
     appVersion: 1.3.0
-    created: "2022-11-15T00:25:51.247130811-05:00"
-    digest: e56e7790b459797b328a2cf837daca223eebecd47ce2b019c4c721f1958671cf
+    created: "2022-11-15T01:06:03.247963469-05:00"
+    description: A Helm chart deploying Replication
+    digest: 3551b9f57c844f96ed9cab4db5e454ea022dbdc3dff50ddeb929a2e57705fb61
     name: csm-replication
     type: application
     urls:
@@ -83,7 +84,7 @@ entries:
   karavi-observability:
   - apiVersion: v2
     appVersion: 1.3.1
-    created: "2022-11-15T00:25:51.261910346-05:00"
+    created: "2022-11-15T01:06:03.268672823-05:00"
     dependencies:
     - name: cert-manager
       repository: https://charts.jetstack.io
@@ -98,4 +99,4 @@ entries:
     urls:
     - karavi-observability-1.3.1.tgz
     version: 1.3.1
-generated: "2022-11-15T00:25:51.215157328-05:00"
+generated: "2022-11-15T01:06:03.189615031-05:00"
