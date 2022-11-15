@@ -236,7 +236,7 @@ spec:
         - retry-interval-start {{ .Values.retryIntervalMin }}
         - retry-interval-max {{ .Values.retryIntervalMax }}
         command:
-        - /{{ .Release.Namespace }}
+        - /dell-replication-controller
         env:
         - name: X_CSI_REPLICATION_POD_NAME
           valueFrom:
