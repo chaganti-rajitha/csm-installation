@@ -124,7 +124,7 @@ controller:
     #   true: enable replication feature(install dell-csi-replicator sidecar)
     #   false: disable replication feature(do not install dell-csi-replicator sidecar)
     # Default value: false
-    enabled: false
+    enabled: true
 
     # image: Image to use for dell-csi-replicator. This shouldn't be changed
     # Allowed values: string
@@ -265,18 +265,18 @@ images:
   
 # adding dependencies
 csm-application-mobility:
-  enabled: true
+  enabled: false
   cert-manager:
     enabled: false
   
 karavi-observability:
-  enabled: true
+  enabled: false
   karaviMetricsPowerflex:
     enabled: false
   karaviMetricsPowerscale:
     enabled: false
     
 csm-replication:
-  enabled: false
+  enabled: true
 
 
