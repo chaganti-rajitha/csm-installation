@@ -2,8 +2,8 @@ apiVersion: v1
 entries:
   csi-powerstore:
   - apiVersion: v2
-    appVersion: 2.4.0
-    created: "2022-11-15T02:46:58.767379462-05:00"
+    appVersion: 2.6.0
+    created: "2022-11-15T02:59:14.763754204-05:00"
     dependencies:
     - condition: csm-application-mobility.enabled
       name: csm-application-mobility
@@ -20,7 +20,7 @@ entries:
     description: 'PowerStore CSI (Container Storage Interface) driver Kubernetes integration.
       This chart includes everything required to provision via CSI as well as a PowerStore
       StorageClass. '
-    digest: d58db79b2f37a6a606ab4238e5d7026a690f0e8d5b3f60b0c87aa599ad3efebe
+    digest: 749904649ea0ec890b3b2ef1ed06f24cc85f4f580eafe24e4cafd6e8e777a52c
     home: https://github.com/dell/csi-powerstore
     keywords:
     - csi
@@ -32,12 +32,12 @@ entries:
     sources:
     - https://github.com/dell/csi-powerstore
     urls:
-    - csi-powerstore-2.4.0.tgz
-    version: 2.4.0
+    - csi-powerstore-2.6.0.tgz
+    version: 2.6.0
   csm-application-mobility:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2022-11-15T02:46:58.77456241-05:00"
+    created: "2022-11-15T02:59:14.774115721-05:00"
     dependencies:
     - condition: cert-manager.enabled
       name: cert-manager
@@ -57,7 +57,7 @@ entries:
   csm-replication:
   - apiVersion: v2
     appVersion: 1.3.0
-    created: "2022-11-15T02:46:58.774896301-05:00"
+    created: "2022-11-15T02:59:14.774449807-05:00"
     description: A Helm chart deploying Replication
     digest: 3551b9f57c844f96ed9cab4db5e454ea022dbdc3dff50ddeb929a2e57705fb61
     name: csm-replication
@@ -68,7 +68,7 @@ entries:
   karavi-observability:
   - apiVersion: v2
     appVersion: 1.3.1
-    created: "2022-11-15T02:46:58.791457977-05:00"
+    created: "2022-11-15T02:59:14.786979863-05:00"
     dependencies:
     - name: cert-manager
       repository: https://charts.jetstack.io
@@ -83,4 +83,4 @@ entries:
     urls:
     - karavi-observability-1.3.1.tgz
     version: 1.3.1
-generated: "2022-11-15T02:46:58.738277845-05:00"
+generated: "2022-11-15T02:59:14.738294407-05:00"
