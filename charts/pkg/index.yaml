@@ -3,7 +3,7 @@ entries:
   csi-powerstore:
   - apiVersion: v2
     appVersion: 2.6.0
-    created: "2022-11-15T02:59:14.763754204-05:00"
+    created: "2022-11-29T00:19:46.323756-05:00"
     dependencies:
     - condition: csm-application-mobility.enabled
       name: csm-application-mobility
@@ -37,7 +37,7 @@ entries:
   csm-application-mobility:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2022-11-15T02:59:14.774115721-05:00"
+    created: "2022-11-29T00:19:46.338755895-05:00"
     dependencies:
     - condition: cert-manager.enabled
       name: cert-manager
@@ -57,7 +57,7 @@ entries:
   csm-replication:
   - apiVersion: v2
     appVersion: 1.3.0
-    created: "2022-11-15T02:59:14.774449807-05:00"
+    created: "2022-11-29T00:19:46.339145385-05:00"
     description: A Helm chart deploying Replication
     digest: 3551b9f57c844f96ed9cab4db5e454ea022dbdc3dff50ddeb929a2e57705fb61
     name: csm-replication
@@ -68,7 +68,7 @@ entries:
   karavi-observability:
   - apiVersion: v2
     appVersion: 1.3.1
-    created: "2022-11-15T02:59:14.786979863-05:00"
+    created: "2022-11-29T00:19:46.354261686-05:00"
     dependencies:
     - name: cert-manager
       repository: https://charts.jetstack.io
@@ -83,4 +83,28 @@ entries:
     urls:
     - karavi-observability-1.3.1.tgz
     version: 1.3.1
-generated: "2022-11-15T02:59:14.738294407-05:00"
+  powerstore-modules:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-11-29T00:19:46.372702176-05:00"
+    dependencies:
+    - condition: csm-application-mobility.enabled
+      name: csm-application-mobility
+      repository: ""
+      version: 0.1.0
+    - condition: karavi-observability.enabled
+      name: karavi-observability
+      repository: ""
+      version: 1.3.1
+    - condition: csm-replication.enabled
+      name: csm-replication
+      repository: ""
+      version: 1.3.0
+    description: A Helm chart for Modules
+    digest: ed9875ca96dfd6945ac9445130545f9dd9be707dc5cd92e9dd6fb1a5551fcf0b
+    name: powerstore-modules
+    type: application
+    urls:
+    - powerstore-modules-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-11-29T00:19:46.292477132-05:00"

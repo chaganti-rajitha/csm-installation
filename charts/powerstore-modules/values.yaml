@@ -1,0 +1,13 @@
+# adding dependencies
+csm-application-mobility:
+  enabled: true
+  cert-manager:
+    enabled: true
+  
+karavi-observability:
+  enabled: true
+  cert-manager:
+    enabled: false
+    
+csm-replication:
+  enabled: true
